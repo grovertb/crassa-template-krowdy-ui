@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { makeStyles } from '@krowdy-ui/styles'
 import { Button, Fab, Switch, Typography, List, ListItemText, ListItem } from '@krowdy-ui/core'
-import { 
+import {
   AccessAlarm as AccessAlarmIcon,
   ThreeDRotation as ThreeDRotationIcon
 } from '@material-ui/icons'
