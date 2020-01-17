@@ -22,7 +22,8 @@
       "classes": true
     }
   },
-  "plugins": ["react", "eslint-plugin-react", "sort-keys-fix"],
+  "plugins": [ "react", "sort-keys-fix" ],
+  "extends": [ "react-app" ],
   "rules": {
     "sort-keys-fix/sort-keys-fix": "error",
     "react/jsx-no-bind": [

@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { makeStyles } from '@material-ui/styles'
-import Button from '@material-ui/core/Button'
-import Fab from '@material-ui/core/Fab'
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm'
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation'
-import Switch from '@material-ui/core/Switch'
-import Typography from '@material-ui/core/Typography'
+import { makeStyles } from '@krowdy-ui/styles'
+import { Button, Fab, Switch, Typography, List, ListItemText, ListItem } from '@krowdy-ui/core'
+import { 
+  AccessAlarm as AccessAlarmIcon,
+  ThreeDRotation as ThreeDRotationIcon
+} from '@material-ui/icons'
 
-import logo from 'sources/img/logo.svg'
-
-import { useComponentWillMount } from 'lib/hooks'
 import themeDucks from 'reducers/theme'
 import productsDucks from 'reducers/products'
-import { List, ListItemText, ListItem } from '@material-ui/core'
+import { useComponentWillMount } from 'lib/hooks'
+import logo from 'sources/img/logo.svg'
 
 const { updateTheme } = themeDucks.creators
 const { getProducts } = productsDucks.creators
@@ -92,10 +89,10 @@ export default function Home() {
         <AccessAlarmIcon />
       </Fab>
       <Fab aria-label='Edit' color='secondary'>
-        <ThreeDRotation />
+        <ThreeDRotationIcon />
       </Fab>
       <Fab aria-label='Delete' variant='extended'>
-        <ThreeDRotation />
+        <ThreeDRotationIcon />
         Extended
       </Fab>
       <input
@@ -117,7 +114,7 @@ export default function Home() {
             href='https://github.com/ghondar/crassa'
             rel='noopener noreferrer'
             target='_blank'>
-              crassa v0.9.19
+              crassa v0.9.24
           </a>
           <List>
             {

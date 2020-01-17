@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-import { Typography, AppBar, Toolbar, IconButton, createMuiTheme, CssBaseline } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
-import { ThemeProvider } from '@material-ui/styles'
+import { Menu as MenuIcon } from '@material-ui/icons'
+import { Typography, AppBar, Toolbar, IconButton, createMuiTheme, CssBaseline } from '@krowdy-ui/core'
+import { ThemeProvider } from '@krowdy-ui/styles'
 
 import MaterialTheme from 'utils/MaterialTheme'
 
@@ -19,7 +19,7 @@ export default function Dashboard({ children }) {
             <MenuIcon />
           </IconButton>
           <Typography color='inherit' variant='h5'>
-            crassa-material-ui
+            crassa-krowdy-ui
           </Typography>
         </Toolbar>
       </AppBar>

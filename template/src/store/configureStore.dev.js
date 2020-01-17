@@ -3,7 +3,6 @@ import { createLogger } from 'redux-logger'
 import { routerMiddleware } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
 import createSagaMiddleware from 'redux-saga'
-import createReduxWaitForMiddleware from 'redux-wait-for-action'
 
 import createRootReducer, { rootSaga } from 'reducers'
 import DevTools from 'containers/Root/DevTools'
@@ -16,7 +15,6 @@ const middleware = [ sagaMiddleware, routerMiddleware(history), createLogger() ]
 
 const finalCreateStore = compose(
   applyMiddleware(...middleware),
-  applyMiddleware(createReduxWaitForMiddleware()),
   DevTools.instrument()
 )
 

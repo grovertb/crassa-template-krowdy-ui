@@ -1,7 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import { routerMiddleware } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
-import createReduxWaitForMiddleware from 'redux-wait-for-action'
 import createSagaMiddleware from 'redux-saga'
 
 import createRootReducer, { rootSaga } from 'reducers'
@@ -18,7 +17,6 @@ const middleware = [ sagaMiddleware, routerMiddleware(history) ]
 
 const finalCreateStore = compose(
   applyMiddleware(...middleware),
-  applyMiddleware(createReduxWaitForMiddleware())
 )
 
 const store = createStore(createRootReducer(history), preloadedState || initialState, finalCreateStore)

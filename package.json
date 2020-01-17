@@ -1,7 +1,7 @@
 {
   "name": "{-- project-name --}",
   "version": "1.0.0",
-  "description": "CRASSA with Material-UI",
+  "description": "CRASSA with Krowdy-UI",
   "main": "index.js",
   "scripts": {
     "start": "crassa start",
@@ -44,10 +44,10 @@
   "dependencies": {
     "@crassa/next": "^0.9.24",
     "@hot-loader/react-dom": "16.11.0",
-    "@material-ui/core": "4.8.3",
+    "@krowdy-ui/core": "^0.0.27",
+    "@krowdy-ui/views": "^0.0.21",
     "@material-ui/icons": "4.5.1",
     "axios": "0.19.1",
-    "axios-debug-log": "0.6.2",
     "connected-react-router": "6.6.1",
     "extensible-duck": "1.6.0",
     "js-cookie": "2.2.1",
@@ -62,6 +62,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "9.4.0",
+    "axios-debug-log": "0.6.2",
     "eslint-plugin-sort-keys-fix": "1.1.0",
     "gh-pages": "2.2.0",
     "redux-devtools": "3.5.0",

@@ -1,5 +1,5 @@
 import { renderToString } from 'react-dom/server'
-import { ServerStyleSheets } from '@material-ui/styles'
+import { ServerStyleSheets } from '@krowdy-ui/styles'
 
 export const setRenderUniversal = (locals, app) => {
   const { htmlData } = locals
