@@ -26,6 +26,7 @@
   "extends": [ "react-app" ],
   "rules": {
     "sort-keys-fix/sort-keys-fix": "error",
+    "arrow-spacing": "error",
     "react/jsx-no-bind": [
       2,
       {
